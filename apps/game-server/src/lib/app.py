@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from web_poker.config import config
+from lib.config import config
 
 def create_app(config_name='default'):
     app = Flask(__name__)

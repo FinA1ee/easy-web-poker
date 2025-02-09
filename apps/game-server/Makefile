@@ -7,7 +7,7 @@ test:
 	pytest
 
 run:
-	FLASK_APP=src/web_poker/app.py flask run --debug
+	FLASK_APP=src/lib/app.py flask run --debug
 
 clean:
 	find . -type d -name "__pycache__" -exec rm -r {} +

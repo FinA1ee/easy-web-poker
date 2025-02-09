@@ -51,10 +51,3 @@ class Card:
         if not isinstance(other, Card):
             return NotImplemented
         return self.rank.value < other.rank.value
-
-    @staticmethod
-    def create_deck() -> List['Card']:
-        """Creates a standard 52-card deck."""
-        return [Card(suit, rank) 
-                for suit in Suit 
-                for rank in Rank]
